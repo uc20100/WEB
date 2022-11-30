@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Основы JavaScript</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style..css" type="text/css">
+</head>
+<body>
+    <h1>ДЗ по "Знакомство с веб-технологиями" (Семинар 3. Основы JavaScript)</h1>
+    <p><strong>Задача:</strong> Создать страницу, которая спрашивает имя у 
+        пользователя и выводит его с помощью функции.</p>
+    <script>
+        let userName = prompt('Введите свое имя:','Незнакомец')
+        function HiUser(value)
+        {
+            alert(`Привет, ${value}!`)
+        }
+        HiUser(userName)
+    </script>
+</body>
+</html>
