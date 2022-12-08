@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON и XML</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style..css" type="text/css">
+</head>
+
+<body>
+    <h1>ДЗ по "Знакомство с веб-технологиями" (Семинар 5. JSON и XML)</h1>
+    <h2>Задача №1: проверить XML на Well formed:</h2>
+
+    <p><strong>Дано:</strong></p>
+    <div class="plain_text">
+        &lt;req&gt;<br>
+        <div class="text_indent">
+            &lt;surname&gt;Иванов&lt;/surname&gt;<br>
+            &lt;name&gt;Иван&lt;/name&gt;<br>
+            &lt;patronymic&gt;Иванович&lt;/patronymic&gt;<br>
+            &lt;birthdate&gt;01.01.1990&lt;/birthdate&gt;<br>
+            &lt;birthplace&gt;Москва&lt;/birthplace&gt;<br>
+            &lt;phone&gt;8 926 766 48 48&lt;/phone&gt;<br>
+        </div>
+        &lt;/req&gt;
+    </div><br><br>
+
+    <p><strong>Проверено:</strong></p>
+    <div class="plain_text">
+        &lt;?xml version="1.0" encoding="UTF-8"?&gt;<br>
+        &lt;req&gt;<br>
+        <div class="text_indent">
+            &lt;surname&gt;Иванов&lt;/surname&gt;<br>
+            &lt;name&gt;Иван&lt;/name&gt;<br>
+            &lt;patronymic&gt;Иванович&lt;/patronymic&gt;<br>
+            &lt;birthdate&gt;01.01.1990&lt;/birthdate&gt;<br>
+            &lt;birthplace&gt;Москва&lt;/birthplace&gt;<br>
+            &lt;phone&gt;8 926 766 48 48&lt;/phone&gt;<br>
+        </div>
+        &lt;/req&gt;<br><br>
+        <em>XML – декларация отображаться в первой строке документа XML, но это не обязательно.</em>
+    </div><br><br>
+
+
+
+    <h2>Задача №2: проверить JSON на Well formed:</h2>
+    <p><strong>Дано:</strong></p>
+    <div class="plain_text">
+        ```json<br>
+        {<br>
+
+        <div class="plain_text">
+            ""surname"": ""Иванов""<br>
+            ""name"": ""Иван""<br>
+            ""patronymic"": ""Иванович""<br>
+            ""birthdate"": ""01.01.1990""<br>
+            ""birthplace"": ""Москва""<br>
+            ""phone"": ""8 926 766 48 48""<br>
+        </div>
+
+        }<br>
+        &lt;/aside&gt;
+    </div><br><br>
+
+    <p><strong>Проверено:</strong></p>
+    <div class="plain_text">
+        {<br>
+        <div class="plain_text">
+            "surname": "Иванов",<br>
+            "name": "Иван",<br>
+            "patronymic": "Иванович",<br>
+            "birthdate": "01.01.1990",<br>
+            "birthplace": "Москва",<br>
+            "phone": "8 926 766 48 48"<br>
+        </div>
+        }<br>
+    </div><br><br>
+
+</body>
+
+</html>

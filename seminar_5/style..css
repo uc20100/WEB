@@ -1,0 +1,32 @@
+html{
+    font-family: 'Roboto', sans-serif;
+    background-color: #fc0;
+}
+
+p{
+    text-indent: 1.5em;
+    text-align: justify;
+}
+
+h1{
+    text-indent: 1.5em;
+    text-align: justify;
+}
+
+h2{
+    text-indent: 1.5em;
+    text-align: justify;
+}
+
+.text_indent{
+    margin-left: 3em;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+.plain_text{
+    margin-left: 1.5em;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
